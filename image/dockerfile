@@ -1,1 +1,1 @@
-WITH node:latest
+FROM node:latest
