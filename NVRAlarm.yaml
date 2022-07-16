@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: NVRAlarm
+  labels:
+    app: NVRAlarm
+spec:
+  replicas: 1
+  selector:    
+    matchLabels:
+      app: NVRAlarm
+  template:
+    metadata:
+      labels:
+        app: NVRAlarm
+    spec:
+      containers:
+        - name: NVRAlarm
+          image: kiamol/ch03-numbers-web
