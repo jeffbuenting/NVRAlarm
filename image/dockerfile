@@ -1,9 +1,11 @@
 FROM node:latest
 
+workdir /usr/local/lib/node
+
 run npm install smtp-server
 run npm install mailparser
-run npm install nodemailer
+# run npm install nodemailer
 
-run mkdir /var/node
+run mkdir -p /var/node
 
-run git RUN git clone https://github.com/ady624/hikvision-nvr /var/node
+# run git RUN git clone https://github.com/ady624/hikvision-nvr /var/node
